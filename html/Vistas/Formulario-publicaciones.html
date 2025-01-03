@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hojas de estilos/Estilos-Formularios.css">
+    <title>Vender</title>
+</head>
+<body>
+        <div id="cabecera">
+            <a href="Inicio.html">
+                <img src="Recursos visuales/Aca-Vendes 2.0.png" id="Logo">
+            </a>
+        </div>
+
+            <div id="box_content">
+                <div id="box-form-venta">
+                    <form action="">
+                        <h1 id="T1">Venta</h1>
+                        <label for="Titulo" class="label-ventas">Título</label>
+                        <input type="text" placeholder="Título" class="form-venta" required>
+                        <!-- <input type="box" placeholder="Descripcion" class="form-venta" required> -->
+                        <label for="Descripcion" class="label-ventas">Descripción</label>
+                        <textarea cols="50" rows="50" placeholder="Descripcion" class="form-venta"></textarea>
+
+                        <label for="Precio" class="label-ventas">Precio</label>
+                        <input type="number" placeholder="Precio" class="form-venta" required>
+
+                        <label for="Descripcion" class="label-ventas">Estado</label>
+                        <select name="" class="form-venta" required>
+                            <option value="Estado" >Estado</option>
+                            <option value="C1">Nuevo</option>
+                            <option value="C2">Usado - Como nuevo</option>
+                            <option value="C3">Usado - Buen estado</option>
+                            <option value="C4">Usado - Aceptable</option>
+                        </select>
+                        <!-- <input type="text" placeholder="Estado de producto" class="form-venta"> -->
+                        <label for="Categoría" class="label-ventas">Categoría</label>
+                        <select name="" class="form-venta" required>
+                            <option value="Categoría">Categoría</option>
+                            <option value="C1">Todos</option>
+                            <option value="C2">Comida</option>
+                            <option value="C3">Ropa</option>
+                            <option value="C4">Papelería</option>
+                            <option value="C5">Libros</option>
+                            <option value="C6">Juguetes</option>
+                            <option value="C7">Anime/Manga</option>
+                            <option value="C8">Electronica</option>
+                            <option value="C9">Pines</option>
+                            <option value="C10">Maquillaje</option>
+                            <option value="C11">Deportes</option>
+                        </select>
+                       <!--  <input type="text" placeholder="Categoría" class="form-venta"> -->
+                        <label for="Unidades" class="label-ventas">Unidades</label>
+                        <input type="text" placeholder="Unidades" class="form-venta">
+
+                        <label for="Subir imagenes" class="label-ventas">Subir imagenes</label>
+                        <input type="file" placeholder="Subir imagenes" class="form-venta" required>
+                        <button id="Subir">Subir</button>
+                    </form>
+
+                </div>
+            </div>
+        <footer id="pie-pag">
+            Version 1.0
+            <br>
+            Phytones 2024 &reg;
+        </footer>
+
+</body>
+</html>

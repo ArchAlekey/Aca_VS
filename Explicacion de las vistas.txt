@@ -1,0 +1,10 @@
+Login.html
+    Es el inicio de la pagina web, a este html estan ligados los html de recuperar contraseña
+    y el formulario para registrarse en la web
+Formularios
+    Ambos formularios hacen referencia para volver a el login.html, tanto si no se
+    concluye el proceso como si se concluye
+Inicio.html
+    Esta es la vista principal, y donde se va a estar visualisando la mayoria del contenido
+    además de que aquí es donde se hace la mayoria de funcionalidades de la pagina.
+    Hay botones con acciones especiales.
