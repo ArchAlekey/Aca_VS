@@ -1,21 +1,23 @@
 body{
     min-height: 100vh;
     background: #546077;
-    flex-direction: column;
-    display: flex; /* Habilita Flexbox en el contenedor principal (body) */
     justify-content: center; /* Centra horizontalmente */
+    min-height: 100vh;
     align-items: center;  /* Centra verticalmente */
-    margin: 0;
-}/*La config para que se pueda centrar  mi caja principal del login*/
+}/*La config para que se pueda centrar  mi caja principal del login */
 
+
+/* Estilos para el container de sesión */
 #box{
+    display: flex;
+    justify-content: center;
     border: 2px solid rgba(0, 0, 0, 0.3);
     width: 700px;
     height: 600px;
     background-color: rgb(255, 255, 255, 0.3);
     border-radius: 2rem;
     transition: ease 0.05;
-    margin: auto;
+    margin: 15vh auto;
 }/*Configuracion de estilos de la caja que almacena los inputs del login*/
 #box:hover{
     background-color: rgb(255, 255, 255, 0.1);
@@ -137,20 +139,13 @@ hr{
     display: flex;
     justify-content: center;
 }
-
-#caja-pie-login{
-    margin: auto auto 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
+/* Estilos para el pie de pagina */
 
 #pie-login{
-    font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center; 
 }
