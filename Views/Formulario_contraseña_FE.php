@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +9,7 @@
     <title>¿Olvido su contraseña?</title>
 </head>
 <body>
-<!--     <div id="cabecera">
-        <a href="../Index.html">
-            <img src="Recursos visuales/Aca-Vendes 2.0.png" id="Logo">
-        </a>
-    </div> -->
-    <?php require('../Public/Templates/Cabecera_FE.php'); ?>
+    <?php include'../Public/Templates/cabeceraFormularios_FE.php'?>
     <div id="box_content">
         <form action="" method="get">
             <div id="box-1"> 

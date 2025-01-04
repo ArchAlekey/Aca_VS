@@ -4,6 +4,7 @@ body{
     background: #546077;
     /*background: linear-gradient(to right, #B9CAF0, #25324D); */
     min-height: 100vh;
+    display: flex;
 }
 
 .nav__bar_cabecera{
@@ -12,12 +13,13 @@ body{
     background-color: #272c36;
     position: fixed;
     border-bottom: #ffffff solid 1px;
+    z-index: 600;
 } /*Estilos para el contenedor de la cabecera*/
 
 .nav__bar_btns{
     display: flex;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 40px;
     color: #8F763B;
     margin-top: 4vh;
 } /* Estilos generales para los botones */
@@ -91,7 +93,7 @@ body{
     height: 50px;
     display: flex;
     justify-content: center;
-    margin: 10px 100px auto auto;
+    margin: 10px 200px auto auto;
     padding: 10px;
     cursor: pointer;
 }
@@ -115,7 +117,7 @@ body{
     height: 50px;
     display: flex;
     justify-content: center;
-    margin: 10px auto auto 100px;
+    margin: 10px auto auto 200px;
     padding: 10px;
     cursor: pointer;
 }
@@ -125,4 +127,88 @@ body{
     background-color: #546077;
     /* border: #546077 solid 1px; */
     border-radius: 1rem;
+}
+
+.nav__bar_filtros{
+    width: 33vh;
+    height: 85vh;
+    background-color: #272c36;
+    margin-top: 15vh;
+    border-right: 1px solid white;
+    position: fixed;
+    z-index: 500;
+    display: none;
+} /* Estilos para barra de filtros */
+
+.show__bar_filtros{
+    display: block;
+}
+
+.nav__bar_opciones{
+    width: 33vh;
+    height: 85vh;
+    background-color: #272c36;
+    margin-top: 15vh;
+    border-left: 1px solid white;
+    position: fixed;
+    z-index: 500;
+    right: 0;
+    display: none;
+}/* Estilos para barra de configuracion */
+
+.show__bar_opciones{
+    display: block;
+}
+
+.btn__list_categorias{
+    width: 25vh;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    margin: 2vh auto 1vh auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    border-radius: 1rem;
+    background-color: #546077;
+    text-decoration: none;
+    appearance: none;
+    cursor: pointer;
+}/* Estilos para los botones/listas de los filtros */
+
+.btn__list_categorias:hover{
+    background-color: #272c36;
+
+}
+
+.encabezado__list_categorias{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}/* Encabezados para los titulos de las categorías */
+
+.container__cierre_sesion{
+    display: flex;
+    justify-content: center;
+    margin: 2vh auto 1vh auto;
+
+}
+a{
+    text-decoration: none;
+}
+.btn__cierre_sesion{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    /* text-decoration: none; */
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn__cierre_sesion:hover{
+    color: #DBA62A;
+    background-color: #546077;
+    border-radius: 1rem;
+    width: 100%;
 }

@@ -14,7 +14,6 @@
             <img src="Recursos visuales/Aca-Vendes 2.0.png" id="Logo">
         </a>
     </div> -->
-    <?php require('../Public/Templates/Cabecera_FE.php') ?>
     <div id="box_content">
         <form action="" method="get">
             <div id="box-2">

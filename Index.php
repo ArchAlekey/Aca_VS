@@ -5,16 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="Public/Img/py/favicon-32x32.png" type="image/x-icon">
         <link rel="stylesheet" href="Public/Styles/Estilos.css">
+        <link rel="stylesheet" href="Public/Styles/Estilos-Formularios.css">
         <title>Aca-Vendes</title>
     </head>
     <body>
-    <?php require'Public/Templates/cabeceraFormularios_FE.php'; ?>
-
 
         <div id="box">
             <div id="caja-caja">
                 <form action="Controllers/loginController.php" method="POST" id="loginform">
-                <img src="Public/Img/Aca-Vendes 2.0.png" alt="" id="Logo">
+                <img src="Public/Img/Aca-Vendes.png" alt="" id="Logo">
 
                 <div class="Caja"><input type="text" placeholder="Usuario" id="Caja_user" name="usuario" require></div>
                 <div class="Caja"><input type="password" placeholder="Contraseña" id="Caja_pass" name="contraseña" required></div>
