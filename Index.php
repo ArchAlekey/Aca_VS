@@ -10,32 +10,47 @@
     </head>
     <body>
         <?php include'Public/Templates/cabeceraFormularios_FE.php'?>
-        <div id="box">
-            <div id="caja-caja">
-                <form action="Controllers/loginController.php" method="POST" id="loginform">
-                <img src="Public/Img/Aca-Vendes.png" alt="" id="Logo">
+        <div class="container__login" > <!-- Contenedor del formulario completo -->
 
-                <div class="Caja"><input type="text" placeholder="Usuario" id="Caja_user" name="usuario" require></div>
-                <div class="Caja"><input type="password" placeholder="Contraseña" id="Caja_pass" name="contraseña" required></div>
-                <div id="Caja-login"><button class="boton-login">Iniciar Sesion</button></div>
+            <div class="container__login_form">
+                <form action="Controllers/loginController.php" method="POST">
+                    <img src="Public/Img/Aca-Vendes.png" alt="" id="Logo">
+                        <div class="container__input">
+                            <input type="text" placeholder="Número de cuenta" class="container__input_styles" name="usuario" required>
+                        </div>
+                        <div class="container__input">
+                            <input type="password" placeholder="Contraseña" class="container__input_styles" name="contraseña" required>
+                        </div>
+                        <div class="container__btn_login">
+                            <button class="boton">Iniciar Sesion</button>
+                        </div>
                 </form>
-                <div id="recuperar-pass"><h2 id="rec-pass"><a href="Views/Formulario_contraseña_FE.php">¿Olvidó su contraseña?</a></h2></div>
-                <hr>
+            </div>
+
+            <div class="container__recuperar_contraseña">
+                <h2 class="btn__recuperar_contraseña">
+                    <a href="Views/Formulario_contraseña_FE.php">¿Olvidó su contraseña?</a>
+                </h2>
+            </div>
+                    
+            <div class="container__nuevo_registro">
                 <form action="Views/Formulario_registro_FE.php">
-                    <div id="Caja-registro"><button type="submit" class="boton-login">Unirse</button></div>
+                    <div id="container__btn_nuevo_registro">
+                        <button type="submit" class="boton">Unirse</button></div>
                 </form>
-
             </div>
         </div>
+        
             <!--Footer -->
-            <footer id="pie-login">
-                Version 1.0
-                <br>
-                Phytones 2024 &reg;
-            </footer>
-                <?php include'Config/conn_BE.php'; ?>
-    
-                <script src="Vistas/App/main.js"></script>
+ <!--        <footer class="styles__footer">
+            Version 1.0
+            <br>
+            Phytones 2024 &reg;
+        </footer> -->
+
+        <?php include'Config/conn_BE.php'; ?>
+
+        <script src="Vistas/App/main.js"></script>
         
     </body>
     </html>

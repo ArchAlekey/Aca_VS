@@ -10,23 +10,28 @@
 </head>
 <body>
     <?php include'../Public/Templates/cabeceraFormularios_FE.php'?>
-    <div id="box_content">
-        <form action="" method="get">
-            <div id="box-1"> 
-                <h1 id="T1">Recupera tu contraseña</h1>
+    <div class="container__recuperar_contraseña">
+        <div class="container__formulario_contraseña"> 
+            <form action="" method="get">
                 
-                <h2 id="T2">Ingresa tu correo electrónico o número de celular para buscar tu cuenta.</h2>
-                <input type="text" placeholder="Correo electrónico o número de celular" id="Correo-celular">
+                    <h1 class="titulos"">Recupera tu contraseña</h1>
+                    
+                    <h2 class="titulos">Ingresa tu correo electrónico o número de celular para buscar tu cuenta.</h2>
+                   
+                    <div class="container__input_registro">
+                        <input type="text" placeholder="Correo electrónico o número de celular" class="input__recuperar">
+                    </div>
+                    
+                    <button class="btn__formularios">Buscar</button>
                 
-                <button id="buscar">Buscar</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-    <footer id="pie-pag">
+<!--     <footer id="pie-pag">
         Version 1.0
         <br>
         Phytones 2024 &reg;
-    </footer>
+    </footer> -->
     
     <script src="App/main.js"></script>
 </body>
