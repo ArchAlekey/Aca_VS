@@ -15,15 +15,41 @@ body{
     z-index: 600;
 }
 
-.container__logo{
-    width: 14vh;
+.container__btn_inicio{
+    width: 50px;
+    height: 50px;
     display: flex;
-    justify-content: left;
-    margin: 15px auto auto 50px;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 700;
 }
 
-.logo__{
-    width: 14vh;
+.btn__inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #8F763B;
+    width: 60px;
+    height: 60px;
+}
+
+.btn__inicio a{
+    text-decoration: none;
+}
+
+.btn__inicio img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn__inicio:hover{
+    color: #DBA62A;
+    background-color: #546077;
+    /* border: #546077 solid 1px; */
+    border-radius: 1rem;
 }
 /* ------------------------------------------------------------------ */
 .container__nuevo_registro{
