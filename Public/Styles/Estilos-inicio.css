@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     background: #546077;
-    min-height: 100vh;
     display: flex;
 }
 
@@ -129,7 +128,7 @@ body{
 }
 
 .nav__bar_filtros{
-    width: 33vh;
+    width: 35vh;
     height: 85vh;
     background-color: #272c36;
     margin-top: 15vh;
@@ -144,7 +143,7 @@ body{
 }
 
 .nav__bar_opciones{
-    width: 33vh;
+    width: 35vh;
     height: 85vh;
     background-color: #272c36;
     margin-top: 15vh;
@@ -210,4 +209,28 @@ a{
     background-color: #546077;
     border-radius: 1rem;
     width: 100%;
+}
+
+
+/* Contenedor para las publicaciones */
+.container__publicaciones{
+    width: 100vh;
+    height: 100%;
+    /* background-color: #272c36; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__publicacion_individual{
+    width: 15vh;
+    height: 30vh;
+    background-color: #272c36;
+    border: #ffffff solid 1px;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 400px;
 }

@@ -79,6 +79,23 @@
         <a href="../Controllers/loginControllerCloseSession_BE.php" class="btn__cierre_sesion">Cerrar sesión</a>
     </div>
 </div>
+
+<!-- Publicaciones -->
+    <div class="container__publicaciones">
+        <div class="container__publicacion_individual">
+
+        </div>
+        <div class="container__publicacion_individual">
+            
+        </div>
+        <div class="container__publicacion_individual">
+            
+        </div>
+        <div class="container__publicacion_individual">
+            
+        </div>
+    </div>
+    
     <script src="../Public/App/main.js"></script> 
 </body>
 </html>
