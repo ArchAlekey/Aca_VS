@@ -83,16 +83,18 @@
 <!-- Publicaciones -->
     <div class="container__publicaciones">
         <div class="container__publicacion_individual">
-
-        </div>
-        <div class="container__publicacion_individual">
-            
-        </div>
-        <div class="container__publicacion_individual">
-            
-        </div>
-        <div class="container__publicacion_individual">
-            
+            <div class="card__info_publicacion">
+                <ul class="atributos__publicacion">
+                    <li>Nombre</li>
+                    <li>Descripción</li>
+                    <li>Precio</li>
+                    <li>Estado</li>
+                    <li>Unidades</li>
+                </ul>
+            </div>
+            <div class="card__img_publicacion">
+                <img src="../Public/Img/blank-perfil.png" alt="">
+            </div>
         </div>
     </div>
     

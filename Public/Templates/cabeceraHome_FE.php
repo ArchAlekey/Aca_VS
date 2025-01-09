@@ -11,7 +11,7 @@
             <div class="btn__mid">
                 <div class="btn__buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <div class="btn__inicio"><i class="fa-solid fa-house"></i></div>
-                <div class="btn__perfil"><i class="fa-solid fa-user"></i></div>
+                <a href="/Aca_VS/Views/Perfil_FE.php"><div class="btn__perfil"><i class="fa-solid fa-user"></i></div></a>
             </div>
 
             <div class="btn__right">

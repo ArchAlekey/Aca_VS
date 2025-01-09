@@ -2,52 +2,55 @@ body{
     margin: 0;
     padding: 0;
     background: #546077;
-    /*background: linear-gradient(to right, #B9CAF0, #25324D); */
-    min-height: 100vh;
+    display: flex;
 }
 
-#box-perfil{
-    margin: 100px auto;
-    border: 3px solid black;
-    width: 90%;
-    height: 600px;
-    display: block;
+.titulos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin: 30px 10px 30px;
+    text-align: center;
+}
+
+.container__perfil{
+    display: flex;
     justify-content: center;
-    text-align: center;
+    margin: 20vh auto;
+    width: 90%;
+    height: 40vh;
+    background-color: #272c36;
+    border: white solid 2px;
 }
 
-#foto-perfil{
-    width: 250px;
-    border-radius: 5rem;
-    margin: 40px auto;
+.container__foto_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.container__foto_perfil img{
+    width: 50%;
 }
 
-
-#box-nombre-user{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    margin: 40px auto;
+.container__info_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
 
-#box-nav-bar-perfil{
-    margin: 50px auto;
-}
-.nav-bar-perfil{
+.container__btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
     font-size: 50px;
-    border-radius: 2rem;
-    display: inline;
+    color: #8F763B;
     cursor: pointer;
-    padding: 20px 35px;
-    margin: 1px 30px;
 }
 
-.nav-bar-perfil:hover{
-    background-color: #a6aab3;
-}
-
-#pie-pag{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    margin: 20px auto;
-    text-align: center;
+.btn__publicaiones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
