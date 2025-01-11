@@ -85,11 +85,15 @@
         <div class="container__publicacion_individual">
             <div class="card__info_publicacion">
                 <ul class="atributos__publicacion">
-                    <li>Nombre</li>
+                    <li>Nombre Producto</li>
                     <li>Descripción</li>
                     <li>Precio</li>
                     <li>Estado</li>
                     <li>Unidades</li>
+                </ul>
+                <ul class="atributos__vendedor">
+                    <li>Nombre Persona</li>
+                    <li>Celular</li>
                 </ul>
             </div>
             <div class="card__img_publicacion">

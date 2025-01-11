@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="../Public/Styles/Estilos-Perfil.css">
 <link rel="stylesheet" href="../Public/Styles/Estilos-inicio.css">
+<link rel="icon" href="../Public/Img/py/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Perfil</title>
 <?php require'../Public/Templates/cabeceraHome_FE.php'?>
 
 <div class="container__perfil">
