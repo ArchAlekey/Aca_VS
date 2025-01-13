@@ -12,7 +12,7 @@
     
     <div class="container__nuevo_registro_form">
         <div class="container__formulario_registro">
-            <form action="../Controllers/nuevoUsuarioController.php" method="POST">
+            <form action="../Controllers/nuevoUsuarioController.php" method="POST" enctype="multipart/form-data">
                     <h1 class="titulos">Ingresa tus datos</h1>
                     <input type="text" placeholder="Nombre" name="Nombre" required class="container__input_registro">
                     <input type="text" placeholder="Apellido paterno" name="Apellido_Paterno" required class="container__input_registro">
@@ -21,6 +21,8 @@
                     <input type="text" placeholder="Numero celular" name="Celular" class="container__input_registro">
                     <input type="text" placeholder="Numero de cuenta" name="Numero_Cuenta" required class="container__input_registro">
                     <input type="text" placeholder="Contraseña" name="Contraseña" required class="container__input_registro">
+                    <div class="container__input_registro"><label for="Foto" class="titulos">Foto de perfil</label></div>
+                    <input type="file" name="Foto" class="container__input_registro" accept="image/*">
                     <br>
                     <button class="btn__formularios">Registrarte</button>
             </form>

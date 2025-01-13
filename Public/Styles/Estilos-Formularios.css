@@ -60,7 +60,7 @@ body{
 .container__formulario_registro{
     border: 2px solid rgb(12, 11, 11, 0.3);
     width: 700px;
-    height: 800px;
+    height: 1000px;
     border-radius: 2rem;
     margin: auto;
     background-color: rgb(255, 255, 255, 0.3);

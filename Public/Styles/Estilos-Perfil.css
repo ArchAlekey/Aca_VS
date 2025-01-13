@@ -27,6 +27,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 30%;
+    border-radius:  1rem;
 }
 .container__foto_perfil img{
     width: 50%;
@@ -46,11 +47,61 @@ body{
     width: 30%;
     font-size: 50px;
     color: #8F763B;
-    cursor: pointer;
-}
+} /* Contenedor de botones */
 
+.container__btn_publicaciones{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container__btn_publicaciones:hover{
+    background-color: #546077;
+    border-radius: 1rem;
+    color: #DBA62A;
+}
 .btn__publicaiones{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}/* Estilos de boton publicaciones */
+
+.container__btn_nueva_publicacion{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
 }
+.container__btn_nueva_publicacion:hover{
+    background-color: #546077;
+    border-radius: 1rem;
+    color: #DBA62A;
+}
+.btn__nueva_publicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}/* Estilos de boton nueva publicacion */
+
+.container__btn_contacto{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container__btn_contacto:hover{
+    background-color: #546077;
+    border-radius: 1rem;
+    color: #DBA62A;
+}
+.btn__contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}/* Estilos de boton contacto */
