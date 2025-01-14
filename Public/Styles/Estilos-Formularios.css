@@ -146,6 +146,45 @@ body{
 
 }
 
+/* Estilos especiale para las cajas de texto grandes */
+.container__input_registro_text_area{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 30px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    /* background-color:rgb(255, 255, 255, 0.1); */
+}
+
+.input__recuperar_text_area{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 30px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color:rgb(255, 255, 255, 0.1);
+    resize: none;
+}
+.input__recuperar_text_area:hover{
+    /*border: 2px solid black;*/
+    transform: scale(1.1);
+    background-color: rgb(230, 230, 230);
+
+}/* Estilos especiale para las cajas de texto grandes */
+
+
 .btn__formularios{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -178,7 +217,7 @@ body{
 .container__nueva_publicacion_form{
     border: 2px solid rgb(12, 11, 11, 0.3);
     width: 700px;
-    height: 450px;
+    height: 1000px;
     border-radius: 2rem;
     margin: 16vh auto;
     margin-bottom: 375px;

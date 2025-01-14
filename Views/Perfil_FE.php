@@ -1,3 +1,46 @@
+<?php
+session_start();
+include '../Config/conn_BE.php'; // Conexión a la base de datos
+
+        if (!isset($_SESSION['Usuario'])) {
+            echo '<script>
+                    alert("Debes iniciar sesión para acceder a esta página.");
+                    window.location = "../Index.php";
+                </script>';
+            exit;
+        }
+
+        $usuario = $_SESSION['Usuario'];
+
+        $spd_consulta_datos_perfil = "Call `SPD_CONSULTA_DATOS_PERFIL` ('$usuario');";
+        $call_spd_consulta_datos_perfil = mysqli_query($conexion, $spd_consulta_datos_perfil);
+
+        if (!$call_spd_consulta_datos_perfil) {
+            echo '<script>
+                    alert("Error al ejecutar la consulta.");
+                    window.location = "../Index.php";
+                </script>';
+            exit;
+        }
+
+        $datosUsuario = mysqli_fetch_assoc($call_spd_consulta_datos_perfil);
+            if($datosUsuario){
+                $nombreUsuario = $datosUsuario['Nombre'];
+                $rutaFotoPerfil = $datosUsuario['Ruta'];
+            } else {
+                echo '<script>
+                        alert("No se encontraron datos para este usuario.");
+                        window.location = "../Index.php";
+                      </script>';
+                exit;
+            }
+            mysqli_free_result($call_spd_consulta_datos_perfil);
+                while(mysqli_next_result($conexion)){
+                    mysqli_store_result($conexion);
+                }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +57,10 @@
 
     <div class="container__perfil">
         <div class="container__foto_perfil">
-            <img src="../Public/Img/blank-perfil.png" alt="">
+            <img src="<?php echo htmlspecialchars($rutaFotoPerfil); ?>" alt="">
         </div>
         <div class="container__info_contacto">
-            <h1 class="titulos">Nombre</h1>
+            <h1 class="titulos"><?php echo htmlspecialchars($nombreUsuario); ?></h1>
         </div>
         <div class="container__btns">
             <div class="container__btn_publicaciones">
@@ -33,3 +76,4 @@
     </div>
 </body>
 </html>
+
