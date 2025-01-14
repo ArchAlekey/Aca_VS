@@ -235,14 +235,14 @@ a{
     height: 30vh;
     background-color: #272c36;
     border: #ffffff solid 1px;
-    margin: 10px;
-    flex-grow: 1;
-    flex-basis: 400px;
+    margin: 5px;
+    flex-grow: 5;
+    flex-basis: 300px;
     display: flex;
     justify-content: space-around;
 }
 
-/* Estilos para la card de las publicaciones publicaciones */
+/* Estilos para la card de las publicaciones  */
 .card__info_publicacion{
     display: flex;
     /* border: 2px solid white; */
@@ -256,7 +256,7 @@ a{
     justify-content: center;
 }
 .card__img_publicacion img{
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -267,6 +267,10 @@ a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: aliceblue;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .atributos__vendedor{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

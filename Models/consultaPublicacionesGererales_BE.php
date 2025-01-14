@@ -1,6 +1,8 @@
+<link rel="stylesheet" href="../Public/Styles/Estilos-inicio.css">
+
 <?php
     include '../Config/conn_BE.php';
-    session_start();
+/*     session_start();
 
     if (!isset($_SESSION['Usuario'])) {
         echo '<script>
@@ -8,24 +10,24 @@
                 window.location = "../Index.php";
             </script>';
         exit;
-    }
+    } */
 
-    $usuario = $_SESSION['Usuario'];
+    /* $usuario = $_SESSION['Usuario']; */
 
-    $spd_consulta_publicaciones_usuario = "CALL SPD_CONSULTA_PUBLICACIONES_USUARIO('$usuario');";
-    $call_spd_consulta_publicaciones_usuario = mysqli_query($conexion, $spd_consulta_publicaciones_usuario);
+    $spd_consulta_publicaciones_generales = "CALL SPD_CONSULTA_PUBLICACIONES_GENERALES();";
+    $call_spd_consulta_publicaciones_generales = mysqli_query($conexion, $spd_consulta_publicaciones_generales);
 
-    if (!$call_spd_consulta_publicaciones_usuario) {
+    if (!$call_spd_consulta_publicaciones_generales) {
         echo '<script>
                 alert("Error al ejecutar la consulta.");
                 window.location = "../Index.php";
             </script>';
         exit;
     }
-    include '../Public/Templates/cabeceraHome_FE.php';
+    /* include '../Public/Templates/cabeceraHome_FE.php'; */
     // Verifica si hay resultados y genera dinámicamente el contenido
-    if (mysqli_num_rows($call_spd_consulta_publicaciones_usuario) > 0) {
-        while($datosPublicacion = mysqli_fetch_assoc($call_spd_consulta_publicaciones_usuario)) {
+    if (mysqli_num_rows($call_spd_consulta_publicaciones_generales) > 0) {
+        while($datosPublicacion = mysqli_fetch_assoc($call_spd_consulta_publicaciones_generales)) {
             $nombreProducto = $datosPublicacion['Nombre_Producto'];
             $descripcionProducto = $datosPublicacion['Descripcion'];
             $precioProducto = $datosPublicacion['Precio'];
@@ -66,10 +68,9 @@
               </script>';
     }
 
-    mysqli_free_result($call_spd_consulta_publicaciones_usuario);
+    mysqli_free_result($call_spd_consulta_publicaciones_generales);
 
     while(mysqli_next_result($conexion)){
         mysqli_store_result($conexion);
     }
 ?>
-<link rel="stylesheet" href="../Public/Styles/Estilos-inicio.css">

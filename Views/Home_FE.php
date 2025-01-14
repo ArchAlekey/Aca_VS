@@ -81,7 +81,7 @@
 </div>
 
 <!-- Publicaciones -->
-    <div class="container__publicaciones">
+    <!-- <div class="container__publicaciones">
         <div class="container__publicacion_individual">
             <div class="card__info_publicacion">
                 <ul class="atributos__publicacion">
@@ -101,6 +101,9 @@
                 <img src="../Public/Img/blank-perfil.png" alt="">
             </div>
         </div>
+    </div> -->
+    <div class="container__publicaciones">
+        <?php include '../Models/consultaPublicacionesGererales_BE.php';?>
     </div>
     
     <script src="../Public/App/main.js"></script> 
