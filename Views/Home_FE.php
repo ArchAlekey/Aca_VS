@@ -89,6 +89,7 @@
                     <li>Descripción</li>
                     <li>Precio</li>
                     <li>Estado</li>
+                    <li>Categoría</li>
                     <li>Unidades</li>
                 </ul>
                 <ul class="atributos__vendedor">

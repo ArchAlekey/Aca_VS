@@ -199,6 +199,7 @@ a{
 }
 a{
     text-decoration: none;
+    all: unset;
 }
 .btn__cierre_sesion{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -259,6 +260,7 @@ a{
     display: flex;
     justify-content: center;
     margin: auto;
+    border-radius: 1rem;
 }
 
 .atributos__publicacion{

@@ -64,7 +64,7 @@ include '../Config/conn_BE.php'; // Conexión a la base de datos
         </div>
         <div class="container__btns">
             <div class="container__btn_publicaciones">
-                <div class="btn__publicaiones"><i class="fa-solid fa-shop"></i></div>
+                <a href="../Models/consultaPublicacionesUsuario_BE.php"><div class="btn__publicaiones"><i class="fa-solid fa-shop"></i></div></a>
             </div>
             <div class="container__btn_nueva_publicacion">
                 <a href="Formulario_publicaciones_FE.php"><div class="btn__nueva_publicacion"><i class="fa-solid fa-plus"></i></div></a>
@@ -74,6 +74,7 @@ include '../Config/conn_BE.php'; // Conexión a la base de datos
             </div>
         </div>
     </div>
+
 </body>
 </html>
 
